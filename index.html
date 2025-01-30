@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO List</title>
+    <link rel="stylesheet" href="TODO.css" />
+  </head>
+  <body>
+    <h1>TO-DO List</h1>
+    <!-- main container starts here  -->
+    <div class="TO-DO-container">
+      <!-- hearder section starts here  -->
+      <header class="container">
+        <!-- input section starts here  -->
+        <img src="list.png" alt="list icon" id="list-Icon" />
+        <input
+          type="text"
+          id="input"
+          placeholder="Add a new task"
+          autocomplete="off"
+        />
+        <!-- add button inside input tag  -->
+        <button id="add">
+          <img src="add.png" alt="Add icon" id="add-Icon" />
+        </button>
+
+        <!-- tasks complete section starts here  -->
+        <div class="complete">
+          <img src="double-tick.png" alt="Double-tick" id="tick" />
+          <p id="clear">Clear completed</p>
+        </div>
+      </header>
+      <!-- list of adding tasks counter  -->
+      <main>
+        <ul class="task-list"></ul>
+      </main>
+      <!-- footer part starts here  -->
+      <footer class="footer">
+        <div id="tasks-count"><span id="count">0</span> tasks left</div>
+        <div class="all">
+          <p id="all">All</p>
+          <p id="uncomplete">Uncomplete</p>
+          <p id="completed">Completed</p>
+        </div>
+      </footer>
+    </div>
+    <script src="TODO.JS"></script>
+  </body>
+</html>

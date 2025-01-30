@@ -1,0 +1,113 @@
+h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.TO-DO-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid black;
+  border-radius: 1rem;
+  width: 30rem;
+  height: auto;
+  margin-left: 31%;
+  box-shadow: 5px 5px 5px 5px gray, -5px -5px 5px 5px gray;
+  transition: transform 1s ease-in-out;
+}
+.TO-DO-container .container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 0;
+}
+.TO-DO-container .container #input {
+  display: flex;
+  background-color: rgb(177, 174, 174);
+  width: 21rem;
+  height: 5rem;
+  border-radius: 1rem;
+  margin-left: 0.3rem;
+  margin-top: 1rem;
+  padding: 0 3.3rem;
+  font-size: x-large;
+}
+.TO-DO-container .container #list-Icon {
+  position: absolute;
+  width: 2rem;
+  height: 2.2rem;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+}
+.TO-DO-container .container #add {
+  display: flex;
+  position: absolute;
+  width: 3rem;
+  height: 2rem;
+  align-items: center;
+  margin-left: 24.8rem;
+  margin-top: 2.5rem;
+  background: none;
+  border: none;
+}
+.TO-DO-container .container #add-Icon {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.TO-DO-container .container ::-moz-placeholder {
+  font-size: xx-large;
+  padding-left: 2rem;
+}
+.TO-DO-container .container ::placeholder {
+  font-size: xx-large;
+  padding-left: 2rem;
+}
+.TO-DO-container .container .complete {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: gray;
+}
+.TO-DO-container .container .complete #tick {
+  width: 2rem;
+  height: 2rem;
+}
+.TO-DO-container .container .complete #tick:hover {
+  background-color: black;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.TO-DO-container .container .complete #clear:hover {
+  color: black;
+}
+.TO-DO-container main {
+  margin-top: -1rem;
+}
+.TO-DO-container .task-list {
+  margin: 0;
+}
+.TO-DO-container .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 28rem;
+  height: 3rem;
+}
+.TO-DO-container .footer .all {
+  display: flex;
+  width: 12rem;
+  color: gray;
+  justify-content: space-evenly;
+}
+.TO-DO-container .footer #all:hover,
+.TO-DO-container .footer #uncomplete:hover,
+.TO-DO-container .footer #completed:hover {
+  color: black;
+}
+
+.TO-DO-container:hover {
+  transform: scale(1.2);
+  background-color: aquamarine;
+}/*# sourceMappingURL=TODO.css.map */

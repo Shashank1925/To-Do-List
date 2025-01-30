@@ -1,0 +1,115 @@
+h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.TO-DO-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid black;
+  border-radius: 1rem;
+  width: 30rem;
+  height: auto;
+  margin-left: 31%;
+  box-shadow: 5px 5px 5px 5px (gray), -5px -5px 5px 5px (gray);
+  // transform: scale(1.3);
+  transition: transform 1s ease-in-out;
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 0;
+
+    #input {
+      display: flex;
+      background-color: rgb(177, 174, 174);
+      width: 21rem;
+      height: 5rem;
+      border-radius: 1rem;
+      margin-left: 0.3rem;
+      margin-top: 1rem;
+      padding: 0 3.3rem;
+      font-size: x-large;
+    }
+    #list-Icon {
+      position: absolute;
+      width: 2rem;
+      height: 2.2rem;
+      margin-top: 2.5rem;
+      margin-left: 1rem;
+    }
+
+    #add {
+      display: flex;
+      position: absolute;
+      width: 3rem;
+      height: 2rem;
+      align-items: center;
+      margin-left: 24.8rem;
+      margin-top: 2.5rem;
+      background: none;
+      border: none;
+
+      &-Icon {
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+      }
+    }
+    ::placeholder {
+      font-size: xx-large;
+      padding-left: 2rem;
+    }
+    .complete {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem;
+      color: gray;
+      #tick {
+        width: 2rem;
+        height: 2rem;
+      }
+      #tick:hover {
+        background-color: black;
+        cursor: pointer;
+        border-radius: 0.5rem;
+      }
+      #clear:hover {
+        color: black;
+      }
+    }
+  }
+  main {
+    margin-top: -1rem;
+  }
+  .task-list {
+    // border: 5px solid red;
+    margin: 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 28rem;
+    height: 3rem;
+    // border: 5px solid red;
+    .all {
+      display: flex;
+      width: 12rem;
+      color: gray;
+      //   border: 5px solid red;
+      justify-content: space-evenly;
+    }
+    #all:hover,
+    #uncomplete:hover,
+    #completed:hover {
+      color: black;
+    }
+  }
+}
+.TO-DO-container:hover {
+  // transition: transform 1s ease-in-out;
+  transform: scale(1.2);
+  background-color: aquamarine;
+}
